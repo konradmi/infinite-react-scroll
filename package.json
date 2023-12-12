@@ -1,5 +1,5 @@
 {
-  "name": "react-infinite-scroll",
+  "name": "infinite-react-scroll",
   "version": "0.0.1",
   "description": "A simple component for handling veeery long lists in React",
   "keywords": ["typescript", "infinite-scroll", "infinite-list"],
@@ -8,7 +8,7 @@
   "files": [
     "lib/**/*"
   ],
-  "repository": "git@github.com:konradmi/react-infinite-scroll.git",
+  "repository": "git@github.com:konradmi/infinite-react-scroll.git",
   "author": "Konrad Miekus <miekus.konrad@gmail.com>",
   "license": "MIT",
   "scripts": {
