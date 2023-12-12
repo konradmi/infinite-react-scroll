@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 
-type InfiniteScrollProps<T> = {
+export type InfiniteScrollProps<T> = {
   fetchData: (size: number, offset: number) => Promise<T[] | undefined>
   size: number
   renderElement: (element: T) => React.ReactNode
@@ -8,7 +8,7 @@ type InfiniteScrollProps<T> = {
   loaderComponent?: React.ReactNode
 }
 
-export default function InfiniteScroll<T>({
+export const InfiniteScroll = function InfiniteScroll<T>({
   containerRef,
   fetchData,
   loaderComponent,
