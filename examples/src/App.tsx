@@ -1,22 +1,4 @@
-# infinite-react-scroll
-A simple component for handling veeery long lists in React
-
-It always renders only 2 pages (2 x size) to keep the list performant and loads more pages as you scroll up or down.
-
-## example
-You can either run the example or copy the code below to your project.
-
-To run the example:
-```
-cd examples
-yarn install
-yarn run dev
-```
-
-How to use:
-
-```js
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 
 import { InfiniteScroll } from 'infinite-react-scroll'
 
@@ -49,6 +31,8 @@ const App = () => {
 
   return (
     <div className='App'>
+      <div className='App__header'>Infinite React Scroll</div>
+      <div className='App__title'>TODO table</div>
       <div className='InfiniteScroll' ref={container}>
         <InfiniteScroll
           containerRef={container}
@@ -63,4 +47,3 @@ const App = () => {
 }
 
 export default App
-```
